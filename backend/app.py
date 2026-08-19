@@ -31,6 +31,8 @@ def get_weather(city):
     'feels_like': round(data['main']['feels_like']),
     'humidity': data['main']['humidity'],
     'description': data['weather'][0]['description'],
+    'condition': data['weather'][0]['main'],
+    'icon': data['weather'][0]['icon'],
     'wind_speed': data['wind']['speed'],
     'pressure': data['main']['pressure'],
     'visibility': round(data['visibility'] / 1000, 1)
