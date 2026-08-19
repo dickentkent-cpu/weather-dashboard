@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #eef1f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 32px;
+    width: 480px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#cityInput {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+#cityInput:focus {
+    border-color: #4facfe;
+}
+
+#searchBtn {
+    padding: 12px 24px;
+    background: #4361ee;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#searchBtn:hover {
+    background: #3651d4;
+}
+
+.weather-card {
+    background: linear-gradient(135deg, #4facfe 0%, #3a5ce8 100%);
+    border-radius: 16px;
+    padding: 24px;
+    color: white;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.location-info h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.date {
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: 4px;
+}
+
+.temp-display {
+    text-align: right;
+}
+
+.temp-number {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-top: 2px;
+}
+
+.feels-like {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-label {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.stat-value {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.error {
+    color: #d63031;
+    text-align: center;
+    padding: 12px;
+}
