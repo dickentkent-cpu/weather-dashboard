@@ -6,7 +6,7 @@ searchBtn.addEventListener('click', () => {
     const city = cityInput.value;
 
     if (!city) {
-        resultDiv.innerHTML = '<p>Masukin nama kota dulu ya</p>';
+        resultDiv.innerHTML = '<p>Masukin nama kota dulu ya sayang</p>';
         return;
     }
 
